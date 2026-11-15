@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103059">
+  <title>Choice Wellbeing Service</title>
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #F1EFFF;
+      color: #103059;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      background: #103059;
+      color: white;
+      padding: 35px 22px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 27px;
+      margin: 0 0 8px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    main {
+      max-width: 650px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .tile {
+      background: white;
+      border-radius: 18px;
+      padding: 24px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: #103059;
+      box-shadow: 0 3px 12px #10305912;
+      min-height: 135px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+    }
+
+    .tile:focus-visible {
+      outline: 3px solid #ea11d4;
+      outline-offset: 3px;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    .tile strong {
+      font-size: 13px;
+    }
+
+    .tile small {
+      font-size: 11px;
+      color: #52677d;
+    }
+
+    .welcome {
+      background: white;
+      border-left: 5px solid #ea11d4;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 25px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 11px;
+    }
+
+    @media (max-width: 340px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to Choice 💗</h1>
+    <p>Built around you, empowered by choice.</p>
+  </header>
+
+  <main>
+    <h2>How can we help you today?</h2>
+
+    <nav class="grid" aria-label="Choice services">
+
+      <a class="tile"
+         href="https://www.choicewellbeingservice.org/rainbowguide">
+        <span class="icon" aria-hidden="true">🌈</span>
+        <strong>Rainbow Guides</strong>
+        <small>Information and guidance</small>
+      </a>
+
+      <a class="tile"
+         href="https://www.choicewellbeingservice.org/">
+        <span class="icon" aria-hidden="true">📚</span>
+        <strong>Online Learning</strong>
+        <small>Courses and resources</small>
+      </a>
+
+      <a class="tile"
+         href="https://www.choicewellbeingservice.org/">
+        <span class="icon" aria-hidden="true">📅</span>
+        <strong>What's On</strong>
+        <small>Events and activities</small>
+      </a>
+
+      <a class="tile"
+         href="https://www.choicewellbeingservice.org/">
+        <span class="icon" aria-hidden="true">💗</span>
+        <strong>Wellbeing Support</strong>
+        <small>Support from Choice</small>
+      </a>
+
+      <a class="tile"
+         href="https://www.choicewellbeingservice.org/">
+        <span class="icon" aria-hidden="true">🧭</span>
+        <strong>Where to Start?</strong>
+        <small>Find your next step</small>
+      </a>
+
+      <a class="tile"
+         href="https://www.choicewellbeingservice.org/managemyeventbookings">
+        <span class="icon" aria-hidden="true">👤</span>
+        <strong>My Choice</strong>
+        <small>Members and bookings</small>
+      </a>
+
+    </nav>
+
+    <section class="welcome">
+      <strong>You're welcome here.</strong>
+      <p>
+        Whether you're looking for information,
+        learning something new or finding support,
+        Choice is here to help you explore your options.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © Choice Wellbeing Service CIC
+  </footer>
+
+</body>
+</html>
