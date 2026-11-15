@@ -6,6 +6,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#103059">
+
   <title>Choice Wellbeing Service</title>
 
   <link rel="preconnect"
@@ -13,11 +14,14 @@
   <link rel="preconnect"
         href="https://fonts.gstatic.com"
         crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -29,13 +33,25 @@
     header {
       background: #103059;
       color: white;
-      padding: 35px 22px;
+      padding: 32px 20px;
       text-align: center;
     }
 
+    .logo {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      display: block;
+      margin: 0 auto 22px;
+      background: white;
+      border-radius: 16px;
+      padding: 12px;
+    }
+
     header h1 {
-      font-size: 27px;
+      font-size: 26px;
       margin: 0 0 8px;
+      font-weight: 700;
     }
 
     header p {
@@ -51,7 +67,7 @@
 
     h2 {
       font-size: 20px;
-      margin-bottom: 18px;
+      margin: 0 0 18px;
     }
 
     .grid {
@@ -74,6 +90,11 @@
       align-items: center;
       justify-content: center;
       gap: 9px;
+      transition: transform 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: translateY(-3px);
     }
 
     .tile:focus-visible {
@@ -104,14 +125,27 @@
       line-height: 1.7;
     }
 
+    .welcome p {
+      margin-bottom: 0;
+    }
+
     footer {
       text-align: center;
       padding: 25px 15px;
       font-size: 11px;
+      color: #52677d;
     }
 
     @media (max-width: 340px) {
-      .grid { grid-template-columns: 1fr; }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tile {
+        transition: none;
+      }
     }
   </style>
 </head>
@@ -119,52 +153,76 @@
 <body>
 
   <header>
+
+    <img
+      class="logo"
+      src="choice%20logo%201.png"
+      alt="Choice Wellbeing Service logo"
+    >
+
     <h1>Welcome to Choice 💗</h1>
-    <p>Built around you, empowered by choice.</p>
+
+    <p>
+      Built around you, empowered by choice.
+    </p>
+
   </header>
 
   <main>
+
     <h2>How can we help you today?</h2>
 
     <nav class="grid" aria-label="Choice services">
 
-      <a class="tile"
-         href="https://www.choicewellbeingservice.org/rainbowguide">
+      <a
+        class="tile"
+        href="https://www.choicewellbeingservice.org/rainbowguide"
+      >
         <span class="icon" aria-hidden="true">🌈</span>
         <strong>Rainbow Guides</strong>
         <small>Information and guidance</small>
       </a>
 
-      <a class="tile"
-         href="https://www.choicewellbeingservice.org/">
+      <a
+        class="tile"
+        href="https://www.choicewellbeingservice.org/"
+      >
         <span class="icon" aria-hidden="true">📚</span>
         <strong>Online Learning</strong>
         <small>Courses and resources</small>
       </a>
 
-      <a class="tile"
-         href="https://www.choicewellbeingservice.org/">
+      <a
+        class="tile"
+        href="https://www.choicewellbeingservice.org/"
+      >
         <span class="icon" aria-hidden="true">📅</span>
         <strong>What's On</strong>
         <small>Events and activities</small>
       </a>
 
-      <a class="tile"
-         href="https://www.choicewellbeingservice.org/">
+      <a
+        class="tile"
+        href="https://www.choicewellbeingservice.org/"
+      >
         <span class="icon" aria-hidden="true">💗</span>
         <strong>Wellbeing Support</strong>
         <small>Support from Choice</small>
       </a>
 
-      <a class="tile"
-         href="https://www.choicewellbeingservice.org/">
+      <a
+        class="tile"
+        href="https://www.choicewellbeingservice.org/"
+      >
         <span class="icon" aria-hidden="true">🧭</span>
         <strong>Where to Start?</strong>
         <small>Find your next step</small>
       </a>
 
-      <a class="tile"
-         href="https://www.choicewellbeingservice.org/managemyeventbookings">
+      <a
+        class="tile"
+        href="https://www.choicewellbeingservice.org/managemyeventbookings"
+      >
         <span class="icon" aria-hidden="true">👤</span>
         <strong>My Choice</strong>
         <small>Members and bookings</small>
@@ -174,12 +232,14 @@
 
     <section class="welcome">
       <strong>You're welcome here.</strong>
+
       <p>
         Whether you're looking for information,
         learning something new or finding support,
         Choice is here to help you explore your options.
       </p>
     </section>
+
   </main>
 
   <footer>
