@@ -1,0 +1,20 @@
+
+{
+  "name": "Choice Wellbeing Service",
+  "short_name": "Choice",
+  "description": "Information, learning and wellbeing support for parent carers and families.",
+  "id": "/choice-wellbeing-app/",
+  "start_url": "/choice-wellbeing-app/",
+  "scope": "/choice-wellbeing-app/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#103059",
+  "icons": [
+    {
+      "src": "choice-icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
